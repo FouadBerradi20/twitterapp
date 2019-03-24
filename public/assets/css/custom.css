@@ -1,0 +1,102 @@
+.card-custom {
+    background: #fff;
+    padding: 15px;
+    border-top: 5px solid #4091e2;
+    box-shadow: -1px 3px 5px #eee;
+    border-radius: 3px
+}
+.card-custom-footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+.card-custom form input[type="search"] {
+    border: 0px solid transparent;
+    border-bottom: 2px solid #4091e2;
+    transition: border 0.5s ease-in;
+}
+.card-custom form input[type="search"]:focus {
+    border: 0px solid transparent;
+}
+.add-croup {
+    margin-top: 20px;
+}
+#cards {
+    margin-top: 40px;
+    padding: 20px;
+
+}
+#cards h3 {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4091e2;
+}
+#cards .card {
+    box-shadow: -1px 3px 5px #eee;
+}
+.add {
+    text-align: right;
+}
+/*************************************
+    Modal
+ *************/
+#modalBtn {
+    margin-bottom: 30px
+}
+.modal{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top:0;
+    height: 100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background-color:#f4f4f4;
+    margin: 15% auto;
+    width:50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name:modalopen;
+    animation-duration:1s;
+}
+
+.modal-header h2, .modal-footer h3{
+    margin:0;
+}
+
+.modal-header{
+    background:#4091e2;
+    padding:15px;
+    color:#fff;
+}
+
+.modal-body{
+    padding:10px 20px;
+}
+
+.modal-footer{
+    padding:10px;
+    color:#fff;
+    text-align: right;
+}
+
+.closeBtn{
+    color:#ccc;
+    float: right;
+    font-size:30px;
+    color:#fff;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color:#000;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+@keyframes modalopen{
+    from{ opacity: 0}
+    to {opacity: 1}
+}
